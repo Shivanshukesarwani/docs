@@ -175,6 +175,7 @@ defaultValue="ubuntu-mysql-8.4"
 values={[
 { label: 'MySQL 8.4', value: 'ubuntu-mysql-8.4', },
 { label: 'MySQL 8.0', value: 'ubuntu-mysql-8.0', },
+{ label: 'MariaDB 12.3', value: 'ubuntu-mariadb-12.3', },
 { label: 'MariaDB 11.4', value: 'ubuntu-mariadb-11.4', },
 { label: 'MariaDB 10.11', value: 'ubuntu-mariadb-10.11', },
 ]}>
@@ -193,6 +194,15 @@ sha256sum -c && sudo CLOUD=oci DB_ENGINE=MYSQL_8.4 bash install.sh
 curl -sS https://installer.cloudpanel.io/ce/v2/install.sh -o install.sh; \
 echo "8146dbe0a488e7088b04071b0c34d59aa0ab1fe9dcec382d395fd155c9e6c476 install.sh" | \
 sha256sum -c && sudo CLOUD=oci DB_ENGINE=MYSQL_8.0 bash install.sh
+```
+
+</TabItem>
+<TabItem value="ubuntu-mariadb-12.3">
+
+```bash
+curl -sS https://installer.cloudpanel.io/ce/v2/install.sh -o install.sh; \
+echo "8146dbe0a488e7088b04071b0c34d59aa0ab1fe9dcec382d395fd155c9e6c476 install.sh" | \
+sha256sum -c && sudo CLOUD=oci DB_ENGINE=MARIADB_12.3 bash install.sh
 ```
 
 </TabItem>

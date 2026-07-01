@@ -64,70 +64,6 @@ values={[
 { label: 'Debian 12 LTS', value: 'debian-12', },
 { label: 'Debian 11 LTS', value: 'debian-11', },
 ]}>
-<TabItem value="ubuntu-24.04">
-
-1. Login via **SSH** to the **Server**.
-
-```bash
-ssh -i path_to_your_private_key root@serverIpAddress
-```
-
-2. Update the system and install the required packages.
-
-```bash
-apt update && apt -y upgrade && apt -y install curl wget sudo
-```
-
-3. Run the installer with your preferred **Database Engine**.
-
-<Tabs
-defaultValue="ubuntu-mysql-8.4"
-values={[
-{ label: 'MySQL 8.4', value: 'ubuntu-mysql-8.4', },
-{ label: 'MySQL 8.0', value: 'ubuntu-mysql-8.0', },
-{ label: 'MariaDB 11.4', value: 'ubuntu-mariadb-11.4', },
-{ label: 'MariaDB 10.11', value: 'ubuntu-mariadb-10.11', },
-]}>
-<TabItem value="ubuntu-mysql-8.4">
-
-```bash
-curl -sS https://installer.cloudpanel.io/ce/v2/install.sh -o install.sh; \
-echo "8146dbe0a488e7088b04071b0c34d59aa0ab1fe9dcec382d395fd155c9e6c476 install.sh" | \
-sha256sum -c && sudo CLOUD=hetzner DB_ENGINE=MYSQL_8.4 bash install.sh
-```
-
-</TabItem>
-<TabItem value="ubuntu-mysql-8.0">
-
-```bash
-curl -sS https://installer.cloudpanel.io/ce/v2/install.sh -o install.sh; \
-echo "8146dbe0a488e7088b04071b0c34d59aa0ab1fe9dcec382d395fd155c9e6c476 install.sh" | \
-sha256sum -c && sudo CLOUD=hetzner DB_ENGINE=MYSQL_8.0 bash install.sh
-```
-
-</TabItem>
-<TabItem value="ubuntu-mariadb-11.4">
-
-```bash
-curl -sS https://installer.cloudpanel.io/ce/v2/install.sh -o install.sh; \
-echo "8146dbe0a488e7088b04071b0c34d59aa0ab1fe9dcec382d395fd155c9e6c476 install.sh" | \
-sha256sum -c && sudo CLOUD=hetzner DB_ENGINE=MARIADB_11.4 bash install.sh
-```
-
-</TabItem>
-<TabItem value="ubuntu-mariadb-10.11">
-
-```bash
-curl -sS https://installer.cloudpanel.io/ce/v2/install.sh -o install.sh; \
-echo "8146dbe0a488e7088b04071b0c34d59aa0ab1fe9dcec382d395fd155c9e6c476 install.sh" | \
-sha256sum -c && sudo CLOUD=hetzner DB_ENGINE=MARIADB_10.11 bash install.sh
-```
-
-</TabItem>
-</Tabs>
-
-</TabItem>
-
 <TabItem value="ubuntu-26.04">
 
 1. Login via **SSH** to the **Server**.
@@ -177,6 +113,80 @@ sha256sum -c && sudo CLOUD=hetzner DB_ENGINE=MARIADB_12.3 bash install.sh
 curl -sS https://installer.cloudpanel.io/ce/v2/install.sh -o install.sh; \
 echo "8146dbe0a488e7088b04071b0c34d59aa0ab1fe9dcec382d395fd155c9e6c476 install.sh" | \
 sha256sum -c && sudo CLOUD=hetzner DB_ENGINE=MARIADB_11.8 bash install.sh
+```
+
+</TabItem>
+</Tabs>
+
+</TabItem>
+
+<TabItem value="ubuntu-24.04">
+
+1. Login via **SSH** to the **Server**.
+
+```bash
+ssh -i path_to_your_private_key root@serverIpAddress
+```
+
+2. Update the system and install the required packages.
+
+```bash
+apt update && apt -y upgrade && apt -y install curl wget sudo
+```
+
+3. Run the installer with your preferred **Database Engine**.
+
+<Tabs
+defaultValue="ubuntu-mysql-8.4"
+values={[
+{ label: 'MySQL 8.4', value: 'ubuntu-mysql-8.4', },
+{ label: 'MySQL 8.0', value: 'ubuntu-mysql-8.0', },
+{ label: 'MariaDB 12.3', value: 'ubuntu-mariadb-12.3', },
+{ label: 'MariaDB 11.4', value: 'ubuntu-mariadb-11.4', },
+{ label: 'MariaDB 10.11', value: 'ubuntu-mariadb-10.11', },
+]}>
+<TabItem value="ubuntu-mysql-8.4">
+
+```bash
+curl -sS https://installer.cloudpanel.io/ce/v2/install.sh -o install.sh; \
+echo "8146dbe0a488e7088b04071b0c34d59aa0ab1fe9dcec382d395fd155c9e6c476 install.sh" | \
+sha256sum -c && sudo CLOUD=hetzner DB_ENGINE=MYSQL_8.4 bash install.sh
+```
+
+</TabItem>
+<TabItem value="ubuntu-mysql-8.0">
+
+```bash
+curl -sS https://installer.cloudpanel.io/ce/v2/install.sh -o install.sh; \
+echo "8146dbe0a488e7088b04071b0c34d59aa0ab1fe9dcec382d395fd155c9e6c476 install.sh" | \
+sha256sum -c && sudo CLOUD=hetzner DB_ENGINE=MYSQL_8.0 bash install.sh
+```
+
+</TabItem>
+<TabItem value="ubuntu-mariadb-12.3">
+
+```bash
+curl -sS https://installer.cloudpanel.io/ce/v2/install.sh -o install.sh; \
+echo "8146dbe0a488e7088b04071b0c34d59aa0ab1fe9dcec382d395fd155c9e6c476 install.sh" | \
+sha256sum -c && sudo CLOUD=hetzner DB_ENGINE=MARIADB_12.3 bash install.sh
+```
+
+</TabItem>
+<TabItem value="ubuntu-mariadb-11.4">
+
+```bash
+curl -sS https://installer.cloudpanel.io/ce/v2/install.sh -o install.sh; \
+echo "8146dbe0a488e7088b04071b0c34d59aa0ab1fe9dcec382d395fd155c9e6c476 install.sh" | \
+sha256sum -c && sudo CLOUD=hetzner DB_ENGINE=MARIADB_11.4 bash install.sh
+```
+
+</TabItem>
+<TabItem value="ubuntu-mariadb-10.11">
+
+```bash
+curl -sS https://installer.cloudpanel.io/ce/v2/install.sh -o install.sh; \
+echo "8146dbe0a488e7088b04071b0c34d59aa0ab1fe9dcec382d395fd155c9e6c476 install.sh" | \
+sha256sum -c && sudo CLOUD=hetzner DB_ENGINE=MARIADB_10.11 bash install.sh
 ```
 
 </TabItem>
@@ -269,6 +279,7 @@ defaultValue="debian-mysql-8.4"
 values={[
 { label: 'MySQL 8.4', value: 'debian-mysql-8.4', },
 { label: 'MySQL 8.0', value: 'debian-mysql-8.0', },
+{ label: 'MariaDB 12.3', value: 'debian-mariadb-12.3', },
 { label: 'MariaDB 11.8', value: 'debian-mariadb-11.8', },
 ]}>
 <TabItem value="debian-mysql-8.4">
@@ -286,6 +297,15 @@ sha256sum -c && sudo CLOUD=hetzner DB_ENGINE=MYSQL_8.4 bash install.sh
 curl -sS https://installer.cloudpanel.io/ce/v2/install.sh -o install.sh; \
 echo "8146dbe0a488e7088b04071b0c34d59aa0ab1fe9dcec382d395fd155c9e6c476 install.sh" | \
 sha256sum -c && sudo CLOUD=hetzner DB_ENGINE=MYSQL_8.0 bash install.sh
+```
+
+</TabItem>
+<TabItem value="debian-mariadb-12.3">
+
+```bash
+curl -sS https://installer.cloudpanel.io/ce/v2/install.sh -o install.sh; \
+echo "8146dbe0a488e7088b04071b0c34d59aa0ab1fe9dcec382d395fd155c9e6c476 install.sh" | \
+sha256sum -c && sudo CLOUD=hetzner DB_ENGINE=MARIADB_12.3 bash install.sh
 ```
 
 </TabItem>
@@ -323,6 +343,7 @@ defaultValue="debian-mysql-8.4"
 values={[
 { label: 'MySQL 8.4', value: 'debian-mysql-8.4', },
 { label: 'MySQL 8.0', value: 'debian-mysql-8.0', },
+{ label: 'MariaDB 12.3', value: 'debian-mariadb-12.3', },
 { label: 'MariaDB 11.4', value: 'debian-mariadb-11.4', },
 { label: 'MariaDB 10.11', value: 'debian-mariadb-10.11', },
 ]}>
@@ -341,6 +362,15 @@ sha256sum -c && sudo CLOUD=hetzner DB_ENGINE=MYSQL_8.4 bash install.sh
 curl -sS https://installer.cloudpanel.io/ce/v2/install.sh -o install.sh; \
 echo "8146dbe0a488e7088b04071b0c34d59aa0ab1fe9dcec382d395fd155c9e6c476 install.sh" | \
 sha256sum -c && sudo CLOUD=hetzner DB_ENGINE=MYSQL_8.0 bash install.sh
+```
+
+</TabItem>
+<TabItem value="debian-mariadb-12.3">
+
+```bash
+curl -sS https://installer.cloudpanel.io/ce/v2/install.sh -o install.sh; \
+echo "8146dbe0a488e7088b04071b0c34d59aa0ab1fe9dcec382d395fd155c9e6c476 install.sh" | \
+sha256sum -c && sudo CLOUD=hetzner DB_ENGINE=MARIADB_12.3 bash install.sh
 ```
 
 </TabItem>
