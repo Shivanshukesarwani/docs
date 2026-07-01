@@ -25,7 +25,7 @@ On this site, you find a guide to install [Shopware](https://www.shopware.com/) 
 If you like the command line, you can create a **Shopware Site** with the following command as **root user**.
 
 ```bash
-clpctl site:add:php --domainName=www.domain.com --phpVersion=8.4 --vhostTemplate='Shopware 6' --siteUser='john-doe' --siteUserPassword='!secretPassword!'
+clpctl site:add:php --domainName=www.domain.com --phpVersion=8.5 --vhostTemplate='Shopware 6' --siteUser='john-doe' --siteUserPassword='!secretPassword!'
 ```
 
 ## Creating a Shopware Project
@@ -45,7 +45,7 @@ cd htdocs && rm -rf www.domain.com
 3. Create a **Symfony Project** via **Composer**:
 
 ```bash
-php8.4 /usr/local/bin/composer create-project shopware/production www.domain.com
+php8.5 /usr/local/bin/composer create-project shopware/production www.domain.com
 ```
 
 4. Ensure to have a valid [TLS Certificate](../../../frontend-area/tls/) installed for your domain.

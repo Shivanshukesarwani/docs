@@ -25,7 +25,7 @@ On this site, you find a guide to install [CodeIgniter](https://codeigniter.com/
 If you like the command line, you can create a **CodeIgniter Site** with the following command as **root user**.
 
 ```bash
-clpctl site:add:php --domainName=www.domain.com --phpVersion=8.4 --vhostTemplate='CodeIgniter 4' --siteUser='john-doe' --siteUserPassword='!secretPassword!'
+clpctl site:add:php --domainName=www.domain.com --phpVersion=8.5 --vhostTemplate='CodeIgniter 4' --siteUser='john-doe' --siteUserPassword='!secretPassword!'
 ```
 
 ## Creating a CodeIgniter Project
@@ -45,7 +45,7 @@ cd htdocs && rm -rf www.domain.com
 3. Create a **CodeIgniter Project** via **Composer**:
 
 ```bash
-php8.4 /usr/local/bin/composer create-project codeigniter4/appstarter www.domain.com
+php8.5 /usr/local/bin/composer create-project codeigniter4/appstarter www.domain.com
 ```
 
 4. **Done!** You can now open your site in your browser to see the **Welcome to CodeIgniter** page.

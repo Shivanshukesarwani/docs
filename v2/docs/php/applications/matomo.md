@@ -25,7 +25,7 @@ On this site, you find a guide to install [Matomo](https://matomo.org/) on **Clo
 If you like the command line, you can create a **Matomo Site** with the following command as **root user**.
 
 ```bash
-clpctl site:add:php --domainName=www.domain.com --phpVersion=8.4 --vhostTemplate='Matomo 5' --siteUser='john-doe' --siteUserPassword='!secretPassword!'
+clpctl site:add:php --domainName=www.domain.com --phpVersion=8.5 --vhostTemplate='Matomo 5' --siteUser='john-doe' --siteUserPassword='!secretPassword!'
 ```
 
 ## Creating a Matomo Project
