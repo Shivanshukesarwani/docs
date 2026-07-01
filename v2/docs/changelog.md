@@ -4,7 +4,7 @@ title: Changelog
 sidebar_label: Changelog
 ---
 
-## v2.5.4 - [2026-08-01]
+## v2.5.4 - [2026-07-01]
 **New**
 - Node.js 24 LTS Support
 - MariaDB 12.3 Support
