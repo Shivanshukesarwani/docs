@@ -6,6 +6,7 @@ sidebar_label: Requirements
 
 ## Operating Systems
 
+- [Ubuntu 26.04 (Resolute Raccoon)](https://releases.ubuntu.com/26.04/) 
 - [Ubuntu 24.04 (Noble Numbat)](https://releases.ubuntu.com/24.04/) 
 - [Ubuntu 22.04 (Jammy Jellyfish)](https://releases.ubuntu.com/22.04/)
 - [Debian 13 (Trixie)](https://wiki.debian.org/DebianTrixie)

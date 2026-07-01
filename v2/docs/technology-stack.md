@@ -15,50 +15,66 @@ import TabItem from '@theme/TabItem';
 Next generation **Technology Stack** for maximum performance and security to run **PHP**, **Node.js**, **Static Websites**, **Reverse Proxies** and **Python Applications**.
 
 <Tabs
-defaultValue="ubuntu-24.04"
+defaultValue="ubuntu-26.04"
 values={[
-{ label: 'Ubuntu 24.04 LTS', value: 'ubuntu-24.04', },
+{ label: 'Ubuntu 26.04 LTS', value: 'ubuntu-26.04', },
 { label: 'Debian 13 LTS', value: 'debian-13', },
 ]}>
-<TabItem value="ubuntu-24.04">
+<TabItem value="ubuntu-26.04">
 
-| Service                                    | Version(s)                    |                             |
-|:-------------------------------------------|:------------------------------|:----------------------------|
-| [NGINX](https://nginx.org)                 | **1.28**                      | HTTP3 with PageSpeed Module |
-| [MySQL](https://www.mysql.com/)            | **8.4**, **8.0**              |                             |
-| [MariaDB](https://mariadb.org/)            | **10.11**, **11.4**, **11.8** |                             |
-| [PHP](https://www.php.net)                 | **7.1-8.5**                   |                             |
-| [Redis](https://redis.io)                  | **7**                         |                             |
-| [ProFTPD](http://www.proftpd.org)          | **1.3**                       |                             |
-| [Node.js](https://nodejs.org)              | **12, 14, 16, 18, 20, 22**    | LTS Versions                |
-| [Python](https://www.python.org/)          | **3.12**                      |                             |
-| [Varnish Cache](http://varnish-cache.org/) | **7.5**                       |                             |
+| Service                                    | Version(s)                     |                             |
+|:-------------------------------------------|:-------------------------------|:----------------------------|
+| [NGINX](https://nginx.org)                 | **1.30**                       | HTTP3 with PageSpeed Module |
+| [MySQL](https://www.mysql.com/)            | **8.4**                        |                             |
+| [MariaDB](https://mariadb.org/)            | **11.8**, **12.3**             |                             |
+| [PHP](https://www.php.net)                 | **7.1-8.5**                    |                             |
+| [Redis](https://redis.io)                  | **8**                          |                             |
+| [ProFTPD](http://www.proftpd.org)          | **1.3**                        |                             |
+| [Node.js](https://nodejs.org)              | **12, 14, 16, 18, 20, 22, 24** | LTS Versions                |
+| [Python](https://www.python.org/)          | **3.14**                       |                             |
+| [Varnish Cache](http://varnish-cache.org/) | **7.7**                        |                             |
 
 </TabItem>
 <TabItem value="debian-13">
 
-| Service                                       | Version(s)                 |                             |
-|:----------------------------------------------|:---------------------------|:----------------------------|
-| [NGINX](https://nginx.org)            | **1.28**                   | HTTP3 with PageSpeed Module |
-| [MySQL](https://www.mysql.com/)            | **8.0**                    |                             |
-| [MariaDB](https://mariadb.org/)          | **11.8**                   |                             |
-| [PHP](https://www.php.net)              | **7.1-8.5**                |                             |
-| [Redis](https://redis.io)            | **8**                      |                             |
-| [ProFTPD](http://www.proftpd.org)          | **1.3**                    |                             |
-| [Node.js](https://nodejs.org)          | **12, 14, 16, 18, 20, 22** | LTS Versions                |
-| [Python](https://www.python.org/)           | **3.13**                   |                             |
-| [Varnish Cache](http://varnish-cache.org/)    | **7.5**                    |                             |
+| Service                                       | Version(s)                     |                             |
+|:----------------------------------------------|:-------------------------------|:----------------------------|
+| [NGINX](https://nginx.org)            | **1.30**                       | HTTP3 with PageSpeed Module |
+| [MySQL](https://www.mysql.com/)            | **8.4**, **8.0**               |                             |
+| [MariaDB](https://mariadb.org/)          | **11.8**                       |                             |
+| [PHP](https://www.php.net)              | **7.1-8.5**                    |                             |
+| [Redis](https://redis.io)            | **8**                          |                             |
+| [ProFTPD](http://www.proftpd.org)          | **1.3**                        |                             |
+| [Node.js](https://nodejs.org)          | **12, 14, 16, 18, 20, 22, 24** | LTS Versions                |
+| [Python](https://www.python.org/)           | **3.13**                       |                             |
+| [Varnish Cache](http://varnish-cache.org/)    | **7.5**                        |                             |
 
 </TabItem>
 </Tabs>
 
 <Tabs
-defaultValue="ubuntu-22.04"
+defaultValue="ubuntu-24.04"
 values={[
+{ label: 'Ubuntu 24.04 LTS', value: 'ubuntu-24.04', },
 { label: 'Ubuntu 22.04 LTS', value: 'ubuntu-22.04', },
 { label: 'Debian 12 LTS', value: 'debian-12', },
 { label: 'Debian 11 LTS', value: 'debian-11', },
 ]}>
+<TabItem value="ubuntu-24.04">
+
+| Service                                    | Version(s)                     |                             |
+|:-------------------------------------------|:-------------------------------|:----------------------------|
+| [NGINX](https://nginx.org)                 | **1.30**                       | HTTP3 with PageSpeed Module |
+| [MySQL](https://www.mysql.com/)            | **8.4**, **8.0**               |                             |
+| [MariaDB](https://mariadb.org/)            | **10.11**, **11.4**, **11.8**  |                             |
+| [PHP](https://www.php.net)                 | **7.1-8.5**                    |                             |
+| [Redis](https://redis.io)                  | **7**                          |                             |
+| [ProFTPD](http://www.proftpd.org)          | **1.3**                        |                             |
+| [Node.js](https://nodejs.org)              | **12, 14, 16, 18, 20, 22, 24** | LTS Versions                |
+| [Python](https://www.python.org/)          | **3.12**                       |                             |
+| [Varnish Cache](http://varnish-cache.org/) | **7.5**                        |                             |
+
+</TabItem>
 <TabItem value="ubuntu-22.04">
 
 | Service                                    | Version(s)                              |                       |
@@ -69,7 +85,7 @@ values={[
 | [PHP](https://www.php.net)                 | **7.1-8.5**                             |                       |
 | [Redis](https://redis.io)                  | **6**                                   |                       |
 | [ProFTPD](http://www.proftpd.org)          | **1.3**                                 |                       |
-| [Node.js](https://nodejs.org)              | **12, 14, 16, 18, 20, 22**              | LTS Versions          |
+| [Node.js](https://nodejs.org)              | **12, 14, 16, 18, 20, 22, 24**          | LTS Versions          |
 | [Python](https://www.python.org/)          | **3.10**                                |                       |
 | [Varnish Cache](http://varnish-cache.org/) | **7.1**                                 |                       |
 
@@ -77,17 +93,17 @@ values={[
 <TabItem value="debian-12">
 
 
-| Service                                       | Version(s)                    |                             |
-|:----------------------------------------------|:------------------------------|:----------------------------|
-| [NGINX](https://nginx.org)            | **1.28**                      | HTTP3 with PageSpeed Module |
-| [MySQL](https://www.mysql.com/)            | **8.4**, **8.0**              |                             |
-| [MariaDB](https://mariadb.org/)          | **10.11**, **11.4**, **11.8** |                             |
-| [PHP](https://www.php.net)              | **7.1-8.5**                   |                             |
-| [Redis](https://redis.io)            | **7**                         |                             |
-| [ProFTPD](http://www.proftpd.org)          | **1.3**                       |                             |
-| [Node.js](https://nodejs.org)          | **12, 14, 16, 18, 20, 22**    | LTS Versions                |
-| [Python](https://www.python.org/)           | **3.11**                      |                             |
-| [Varnish Cache](http://varnish-cache.org/)    | **7.5**                       |                             |
+| Service                                       | Version(s)                     |                             |
+|:----------------------------------------------|:-------------------------------|:----------------------------|
+| [NGINX](https://nginx.org)            | **1.30**                       | HTTP3 with PageSpeed Module |
+| [MySQL](https://www.mysql.com/)            | **8.4**, **8.0**               |                             |
+| [MariaDB](https://mariadb.org/)          | **10.11**, **11.4**, **11.8**  |                             |
+| [PHP](https://www.php.net)              | **7.1-8.5**                    |                             |
+| [Redis](https://redis.io)            | **7**                          |                             |
+| [ProFTPD](http://www.proftpd.org)          | **1.3**                        |                             |
+| [Node.js](https://nodejs.org)          | **12, 14, 16, 18, 20, 22, 24** | LTS Versions                |
+| [Python](https://www.python.org/)           | **3.11**                       |                             |
+| [Varnish Cache](http://varnish-cache.org/)    | **7.5**                        |                             |
 
 </TabItem>
 <TabItem value="debian-11">
@@ -101,7 +117,7 @@ values={[
 | [PHP](https://www.php.net)        | **7.1-8.4**                             |                       |
 | [Redis](https://redis.io)         | **6**                                   |                       |
 | [ProFTPD](http://www.proftpd.org) | **1.3**                                 |                       |
-| [Node.js](https://nodejs.org)     | **12, 14, 16, 18, 20, 22**              | LTS Versions          |
+| [Node.js](https://nodejs.org)     | **12, 14, 16, 18, 20, 22, 24**          | LTS Versions          |
 | [Python](https://www.python.org/) | **3.9**                                 |                       |
 | [Varnish Cache](http://varnish-cache.org/) | **7.1**                                 |                       |
 

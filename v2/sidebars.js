@@ -19,8 +19,8 @@ module.exports = {
     },
     {
       type: 'link',
-      label: 'Managed CloudPanel Hosting',
-      href: 'https://www.mgt.io/',
+      label: 'Managed CloudPanel',
+      href: 'https://www.cloudpanel.io/managed/',
     },
     {
       type: 'category',

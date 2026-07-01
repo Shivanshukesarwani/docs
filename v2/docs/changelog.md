@@ -4,6 +4,17 @@ title: Changelog
 sidebar_label: Changelog
 ---
 
+## v2.5.4 - [2026-08-01]
+**New**
+- Node.js 24 LTS Support
+- MariaDB 12.3 Support
+- Ubuntu 26.04 Support
+
+**Bug Fixes**
+- [#758 site:delete does not remove user crontab in /var/spool/cron/crontabs/](https://github.com/cloudpanel-io/cloudpanel-ce/issues/758)
+- [#761 SitePhpSettingsType.php throws 500 error while managing PHP sites — TypeError: Unsupported operand types (string + int)](https://github.com/cloudpanel-io/cloudpanel-ce/issues/761)
+- [#771 Font files missing correct mime type header in NGINX](https://github.com/cloudpanel-io/cloudpanel-ce/issues/771)
+
 ## v2.5.3 - [2025-12-04]
 **New**
 - PHP 8.5 Support
